@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorFull" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goldImg" translatesAutoresizingMaskIntoConstraints="NO" id="lcw-Jl-qxg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueImg" translatesAutoresizingMaskIntoConstraints="NO" id="Xjy-j1-w1b">
+                                <rect key="frame" x="126" y="0.0" width="249" height="399"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redImg" translatesAutoresizingMaskIntoConstraints="NO" id="NEj-CU-9IX">
+                                <rect key="frame" x="223" y="180" width="152" height="487"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cki-5O-f9I">
+                                <rect key="frame" x="134" y="177" width="106" height="57"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="blueTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0xm-3V-tfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-yo-SKT">
+                                <rect key="frame" x="126" y="242" width="121" height="70"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="redTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjw-p6-xE5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c00-Wu-PuD">
+                                <rect key="frame" x="142" y="314" width="98" height="72"/>
+                                <state key="normal" title="Hide Gold"/>
+                                <connections>
+                                    <action selector="goldTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxf-yU-YfE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueButton" destination="cki-5O-f9I" id="shG-mH-VKy"/>
+                        <outlet property="blueRec" destination="Xjy-j1-w1b" id="YaP-HC-amX"/>
+                        <outlet property="goldButton" destination="c00-Wu-PuD" id="aaZ-V4-wHY"/>
+                        <outlet property="goldRec" destination="lcw-Jl-qxg" id="sq5-0u-W1D"/>
+                        <outlet property="redButton" destination="LhU-yo-SKT" id="f6E-p9-XV1"/>
+                        <outlet property="redRec" destination="NEj-CU-9IX" id="DXX-2k-ydG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="399.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blueImg" width="2000" height="2000"/>
+        <image name="goldImg" width="259" height="194"/>
+        <image name="redImg" width="2000" height="1200"/>
+    </resources>
+</document>
